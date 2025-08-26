@@ -1,0 +1,23 @@
+<suite name="CrossBrowserSuite" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="Chrome">
+        <parameter name="browserType" value="chrome"/>
+        <parameter name="deviceType" value="desktop" ></parameter>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.LocationFilter"/>
+            <class name="ge.tbc.testautomation.tests.NewUserCard"/>
+            <class name="ge.tbc.testautomation.tests.userCredit"/>
+        </classes>
+    </test>
+
+    <test name="Firefox">
+        <parameter name="browserType" value="firefox"/>
+        <parameter name="deviceType" value="desktop" ></parameter>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.LocationFilter"/>
+            <class name="ge.tbc.testautomation.tests.NewUserCard"/>
+            <class name="ge.tbc.testautomation.tests.userCredit"/>
+        </classes>
+    </test>
+
+</suite>
