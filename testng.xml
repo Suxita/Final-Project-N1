@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TBC Bank UI Automation Suite" parallel="classes" thread-count="2" verbose="1">
+
+    <test name="Desktop Tests">
+        <parameter name="deviceType" value="desktop"/>
+        <parameter name="browserType" value="chrome"/>
+
+        <classes>
+            <class name="ge.tbc.testautomation.tests.LocationFilter"/>
+            <class name="ge.tbc.testautomation.tests.NewUserCard"/>
+            <class name="ge.tbc.testautomation.tests.userCredit"/>
+        </classes>
+    </test>
+
+    <test name="Mobile Tests">
+        <parameter name="deviceType" value="mobile"/>
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.LocationFilter">
+                <methods>
+                    <exclude name="LocationFilterDropDown"/>
+                </methods>
+            </class>
+
+            <class name="ge.tbc.testautomation.tests.NewUserCard"/>
+            <class name="ge.tbc.testautomation.tests.userCredit"/>
+        </classes>
+    </test>
+
+</suite>
