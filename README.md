@@ -1,9 +1,9 @@
-# Final-Project-N1 🏦
+# Final-Project-N1 
 
-TBC Bank Test Automation Framework - Comprehensive end-to-end testing suite for banking application features including location services, card applications, and credit processing.
+ Comprehensive end-to-end testing suite for TBC bank application features including location services, card applications, and credit processing.
 
 ## 🛠️ Tech Stack
-- **Java** – programming language
+- **Java** –  language
 - **Selenide** – UI testing
 - **TestNG** – testing framework
 - **Maven** – build automation
@@ -67,7 +67,7 @@ public void flakyTest() {
 ```
 
 ###  QR Code Processing
-- **Canvas Extraction:** Extracts QR codes from HTML5 canvas elements
+- **Canvas Extraction:** Extracts QR codes from canvas elements
 - **ZXing Integration:** Decodes QR code content automatically
 - **Error Handling:** Graceful handling of unreadable QR codes
 
@@ -199,7 +199,10 @@ public void flakyTest() {
 ---
 ## Other
 
----
-**Bugs found:**
+<details>
+<summary>Bugs found</summary>
+
 
 ![smth](bug.gif)
+
+</details>
